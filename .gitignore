@@ -1,0 +1,5 @@
+*.o
+SEM1D3C
+.DS_Store
+SRC/*.o
+SRC/Modules/*.o

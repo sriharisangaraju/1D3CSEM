@@ -1,4 +1,5 @@
 *.o
+*.mod
 SEM1D3C
 .DS_Store
 SRC/*.o

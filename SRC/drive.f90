@@ -176,7 +176,9 @@ call readpress(Enonli)
 if (Tdomain%rheononli) &
 call NLnopress(Tdomain,Enonli,Evisco,i,TimeP)
 
-
+if ((Tdomain%Epressmod .eqv. .false.) .and. (Tdomain%rheononli .eqv. .false.)) then
+  nspr = 2
+endif
 
 do n = 0,nel-1
   ngllx     =>   Tdomain%specel(n)%ngllx
